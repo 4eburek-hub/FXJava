@@ -10,13 +10,13 @@ public class Controller {
     public TextArea textArea;
     @FXML
     public TextField textField;
+
     @FXML
     public void Send(ActionEvent actionEvent) {
         textArea.setEditable(false);
         textArea.appendText(textField.getText() + "\n");
         textField.clear();
         textField.requestFocus();
-
     }
 
     public void Clear(ActionEvent actionEvent) {
